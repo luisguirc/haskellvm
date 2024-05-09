@@ -220,7 +220,7 @@ runVM state@VMState { pc = pcVal, program = prog } = do
 ```
 Como visto no código, há partes desta função que estão comentadas. Estas partes imprimem o estado atual da máquina como um todo, ou ainda apenas os registradores, e podem servir como um mecanismo de debugar o código escrito.
 
-Com a VM inteiramente implementada, nos basta checar como são executados os programas nesta máquina. Caso queira, você pode acessar o código completo da VM [aqui]().
+Com a VM inteiramente implementada, nos basta checar como são executados os programas nesta máquina. Caso queira, você pode acessar o código completo da VM [aqui](https://github.com/luisguirc/haskellvm/blob/main/Main.hs).
 
 ## Executando um programa
 Vimos até agora como a VM foi construída, quais seus componentes, e seu *set* de instruções. Nesta sessão, veremos como a implementação da VM pode ser usada para construir programas simples a sofisticados.
