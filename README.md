@@ -34,7 +34,6 @@ data Operand where
     Addr :: Address -> Operand
 deriving instance Show Operand
 ```
- **TODO : ADICIONAR TABELA COM TODAS AS INSTRUÇÕES**
 #### Instruções
 Utilizando GADTs, definimos o tipo  `Instruction`  que representa todas as possíveis instruções que a máquina virtual pode executar. Cada construtor de  `Instruction`  especifica claramente os tipos de operandos que aceita, garantindo que as instruções sejam construídas de maneira segura em termos de tipo. A implementação de cada uma das instruções está contida em outra função (`execute`).
 
